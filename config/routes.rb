@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get "/logout", to:"session#destroy"
   
   resources :users
+  resources :account_activations, only:[:edit]
 end
